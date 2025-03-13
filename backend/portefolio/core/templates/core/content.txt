@@ -1,0 +1,21 @@
+<!--fin du header-->
+        <section class="home" id="home">
+            <div class="image">
+                    {% load static %}
+                    <img src="{% static '/images/img_profile_2.jpg' %}" alt=""> 
+                          
+        
+            </div>
+            <div class="content">
+                <h3>Hi, I AM FRANCK LAGOU !</h3>
+                <span>Développeur full stack </span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consectetur 
+                    blanditiis error iure dolore sed porro reprehenderit odit officia voluptate. 
+                    Explicabo reprehenderit nam, maiores qui ab suscipit animi voluptates porro.</p>
+                <a href="#about" class="btn">about Me</a>
+            </div>
+        
+        </section>
+
+        Tout ce qui n'est pas lié directement aux éléments à afficher (les attributs ) est en dehors de la boucle (en haut ou en bas) ce sont juste des éléments
+        intervenant dans le style global de la page

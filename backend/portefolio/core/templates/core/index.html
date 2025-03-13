@@ -1,0 +1,21 @@
+{% extends 'core/base.html'%}
+{% block title %}home-page{% endblock title %}
+{% block content %}
+        <section class="home" id="home">
+        
+                {% for profile in profiles %}
+                    <div class="image">
+                        <img src="{{ profile.image.url }}" alt=""> 
+                    </div> 
+                    <div class="content">
+                        <h3>Hi, I AM {{profile.name}} <div>{{profile.firstname}}</div></h3>
+                        <span>{{profile.work}}</span>
+                        <p>{{profile.description}}</p>
+                               
+                {% endfor%}
+            
+                <a href="#about" class="btn">about Me</a>
+            </div>
+        </section>
+
+{% endblock content %}
